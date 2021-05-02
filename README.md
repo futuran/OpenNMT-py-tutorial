@@ -32,11 +32,37 @@ Open-NMT-py v1.1.1チュートリアルです。
   ```
   
 ## 本レポジトリを使ったクイックスタート
-+ コードをクローン
++ コードをダウンロード
   ```
     cd OpenNMT-py
-    mkdir experiment
-    cd experiment
+    mkdir ex.test
+    cd ex.test
     git clone https://github.com/futuran/OpenNMT-py-tutorial.git
   ```
-+ 
++ データセット(Multi30k)をダウンロード
+  - https://github.com/multi30k/dataset
+  ```
+    cd OpenNMT-py
+    cd ex.test
+    git clone https://github.com/multi30k/dataset.git
+  ```  
+
++ 前処理を実施
+  ```
+    cd multi30k.en2fr
+    sh preprocess.sh
+  ```  
+
++ 訓練を実施
+  ```
+    nohup sh train.sh &
+  ```  
++ 訓練の進捗を確認
+  ```
+    cat nohup.out
+  ```  
+
++ 推論を実施
+  ```
+    sh translate.sh
+  ```  
