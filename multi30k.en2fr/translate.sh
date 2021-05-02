@@ -3,13 +3,13 @@
 # futuran$ sh translate.sh 10000
 
 step=$1
-dir=../../dataset/data/task1/tok/
+dir=../../multi30k/dataset/data/task1/tok/
 
 mkdir ./baseline/out/
 
 out=./baseline/out/output.$step.ja
 ref=$dir/test_2018_flickr.lc.norm.tok.fr
-python ../../translate.py -model ./baseline/model/model.baseline_step_$step.pt \
+python ../../../../translate.py -model ./baseline/model/model.baseline_step_$step.pt \
         -src $dir/test_2018_flickr.lc.norm.tok.en \
         -output $out -gpu 0 -verbose
 
