@@ -67,5 +67,5 @@ Open-NMT-py v1.1.1チュートリアルです。
 
 + 推論を実施
   ```
-    sh translate.sh
+    sh translate.sh (推論を行いたいstep数)
   ```  
