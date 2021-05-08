@@ -13,6 +13,6 @@ python ../../../translate.py -model ./baseline/model/model.baseline_step_$step.p
         -src $dir/test_2018_flickr.lc.norm.tok.en \
         -output $out -gpu 0 -verbose
 
-perl /mnt/work/multimodal/OpenNMT-py/tools/multi-bleu.perl $ref < $out > $out.bleu
+perl ../../../tools/multi-bleu.perl $ref < $out > $out.bleu
 cat $out.bleu
 
