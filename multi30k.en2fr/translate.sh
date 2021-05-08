@@ -9,7 +9,7 @@ mkdir ./baseline/out/
 
 out=./baseline/out/output.$step.ja
 ref=$dir/test_2018_flickr.lc.norm.tok.fr
-python ../../../../translate.py -model ./baseline/model/model.baseline_step_$step.pt \
+python ../../../translate.py -model ./baseline/model/model.baseline_step_$step.pt \
         -src $dir/test_2018_flickr.lc.norm.tok.en \
         -output $out -gpu 0 -verbose
 
