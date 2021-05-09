@@ -27,7 +27,7 @@ Open-NMT-py v1.1.1チュートリアルです。
     wget https://github.com/OpenNMT/OpenNMT-py/archive/refs/tags/1.1.1.tar.gz
     tar -zxvf 1.1.1.tar.gz
     cd OpenNMT-py
-    python setup install
+    python setup.py install
     cd ..
   ```
   
